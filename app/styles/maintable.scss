@@ -1,0 +1,99 @@
+@import url('//fonts.googleapis.com/css?family=Oswald:400');
+.table {
+  font-family: "Oswald", "Helvetica Newe", Helvetica, sans-serif;
+  color: #333;
+}
+.thead {
+  font-size: 15px;
+  font-weight: 700;
+}
+.table-row {
+  font-size: 14px;
+  padding-top:5px;
+  margin: 5px 0;
+
+  &.running {
+    background-color: #EDF1F8;
+    background: -webkit-linear-gradient(left, #EDF1F8, #FEFFFF);
+    background: -moz-linear-gradient(left, #EDF1F8, #FEFFFF);
+    background: -ms-linear-gradient(left, #EDF1F8, #FEFFFF);
+    border: 1px solid #5E9CD3;
+    .block i {
+      background-color: #5E9CD3;
+    }
+  }
+
+  &.rejected {
+    background-color: #FBE4E4;
+    background: -webkit-linear-gradient(left, #FBE4E4, #FEFFFF);
+    background: -moz-linear-gradient(left, #FBE4E4, #FEFFFF);
+    background: -ms-linear-gradient(left, #FBE4E4, #FEFFFF);
+    border: 1px solid #CF4C54;
+  }
+
+  &.complete,
+  &.accepted {
+    background-color: #EEF3EC;
+    background: -webkit-linear-gradient(left, #EEF3EC, #FEFFFF);
+    background: -moz-linear-gradient(left, #EEF3EC, #FEFFFF);
+    background: -ms-linear-gradient(left, #EEF3EC, #FEFFFF);
+    border: 1px solid #90B478;
+  }
+
+  &.pending {
+    background-color: #F3F7FB;
+    border: 1px solid #D4D4D4;
+    .block i {
+      background-color: #EAF6FE;
+    }
+  }
+
+  .block {
+    width: 40px;
+    height: 20px;
+    background-color: #D8D8D8;
+    display: block;
+    position: relative;
+    border: 1px solid #D4D4D4;
+    margin:2px 0 7px;
+
+    & i {
+      width: 40px;
+      height: 20px;
+      content: '';
+      position: absolute;
+
+      &.green {
+        background-color: #009821;
+      }
+      &.red {
+        background-color: #E54631;
+      }
+    }
+
+    &.half {
+      i {
+        display: block !important;
+        width: 25px;
+      }
+    }
+  }
+}
+
+.chartRow {
+
+  .chartBlocks {
+    display: block;
+    position: relative;
+    float: left;
+    width: 18%;
+    height: 250px;
+    border: 2px solid #72AC4D;
+    margin: 1%;
+    boz-sizing: border-box;
+
+    h4 {
+      padding: 10px 20px;
+    }
+  }
+}

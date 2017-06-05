@@ -1,0 +1,46 @@
+<div class="container-fluid table">
+  <div class="row thead">
+    <div class="col-sm-1">ID</div>
+    <div class="col-sm-2">Owner</div>
+    <div class="col-sm-2">Time started</div>
+    <div class="col-sm-2">State</div>
+    <div class="col-sm-1">Metrics</div>
+    <div class="col-sm-1">Build</div>
+    <div class="col-sm-1">Unit Test</div>
+    <div class="col-sm-1">Funcational Test</div>
+  </div>
+  <div>
+    <table-row ng-repeat="row in MainTableCtrl.stats" row="row" state="row.state">
+      <aside class="chartRow row">
+        <div class="chartBlocks" ng-if="row.hasOwnProperty('metrics')">
+          <h4>Metrics</h4>
+          <metrics test="row.metrics.test" maintainability="row.metrics.maintainability" security="row.metrics.security" workmanship="row.metrics.workmanship"></metrics>
+        </div>
+
+        <div class="chartBlocks" ng-if="row.hasOwnProperty('build')">
+          <h4>Build</h4>
+          <build debug="row.build.debug" release="row.build.release"></build>
+        </div>
+
+        <div class="chartBlocks" ng-if="row.hasOwnProperty('unitTest')">
+          <h4>Unit test</h4>
+          <pie-chart total="row.unitTest.codeCount" passed="row.unitTest.passed"></pie-chart>
+          <percentile-bar covered="row.unitTest.coveredPercent"></percentile-bar>
+          <percentile-num total="row.unitTest.codeCount" passed="row.unitTest.passed" ></percentile-num>
+        </div>
+
+        <div class="chartBlocks" ng-if="row.hasOwnProperty('functionalTest')">
+          <h4>Functional test</h4>
+          <pie-chart total="row.functionalTest.codeCount" passed="row.functionalTest.passed"></pie-chart>
+          <percentile-bar total="row.functionalTest.codeCount" passed="row.functionalTest.passed" covered="row.functionalTest.coveredPercent"></percentile-bar>
+          <percentile-num total="row.functionalTest.codeCount" passed="row.functionalTest.passed" ></percentile-num>
+        </div>
+
+        <div class="chartBlocks">
+          <h4>Result</h4>
+          <result state="row.state" row="row"></result>
+        </div>
+      </aside>
+    </table-row>
+  </div>
+</div>
