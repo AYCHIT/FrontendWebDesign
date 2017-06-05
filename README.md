@@ -17,10 +17,10 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
    Running "grunt test" will run the unit tests with karma.
  
 ## Please ensure to install grunt in the local project path with   "npm install". 
-see more information at https://gruntjs.com/getting-started
+   see more information at https://gruntjs.com/getting-started
 
 ## Please ensure to install bower packages to the local project path   "npm install -g bower", bower install. 
-The bower package can be found at    C:\Users\....\node_modules\bower\bin\bower
+   The bower package can be found at    C:\Users\....\node_modules\bower\bin\bower
 
 ## To the application globally run the following:    
    npm install --global yo bower grunt-cli     
