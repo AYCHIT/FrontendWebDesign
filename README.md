@@ -4,17 +4,25 @@ This project tech trial aims to shows the integrations and dependences of CSS an
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)version 0.15.1.
 
-# installations
-   install grunt-contrib-compass   download and install ruby gem installer 2.2.6 with checked all checkbox   on ruby console, run "gem        install sass"   on ruby console, run "gem install compass"
+# Installations
+   install grunt-contrib-compass   
+   Download and install ruby gem installer 2.2.6 with checked all checkbox   
+   On ruby console, run "gem install sass"   
+   On ruby console, run "gem install compass"
 
-## Build & development
+## Building & Development
    Run "grunt" for building and "grunt serve" for preview.
 
 ## Testing
- Running "grunt test" will run the unit tests with karma.
+   Running "grunt test" will run the unit tests with karma.
  
-## Please ensure to install grunt in the local project path with   "npm install". see more information at https://gruntjs.com/getting-started
+## Please ensure to install grunt in the local project path with   "npm install". 
+see more information at https://gruntjs.com/getting-started
 
-## Please ensure to install bower packages to the local project path   "npm install -g bower", bower install. the bower package can be found at    C:\Users\....\node_modules\bower\bin\bower
+## Please ensure to install bower packages to the local project path   "npm install -g bower", bower install. 
+The bower package can be found at    C:\Users\....\node_modules\bower\bin\bower
 
-## To the application globally run the following:    npm install --global yo bower grunt-cli     npm install -g generator-angular    npm install -g generator-karma
+## To the application globally run the following:    
+   npm install --global yo bower grunt-cli     
+   npm install -g generator-angular    
+   npm install -g generator-karma
