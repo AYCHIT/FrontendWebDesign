@@ -1,6 +1,6 @@
 # crossover-test-John
 
-This project tech trial aims to shows the integrations and dependences of CSS animation frameworks in a web page design.The solution is built with a modern MVVM/MVP/MVCjs architecture implemented with a CSS framework of Compass. This tech trial was intended to be a test on developing enterprise software solution. The design is for a single list with elementsthat can expand and contract, with only one element open at a time.
+This project tech trial aims to show the integrations and dependencies of CSS animation frameworks in a web page design.The solution is built with a modern MVVM/MVP/MVCjs architecture implemented with a CSS framework of Compass. This tech trial was intended to be a test on developing enterprise software solution. The design is for a single list with elements that can expand and contract, with only one element open at a time.
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)version 0.15.1.
 
