@@ -22,7 +22,7 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
 ## Please ensure to install bower packages to the local project path   "npm install -g bower", bower install. 
    The bower package can be found at    C:\Users\....\node_modules\bower\bin\bower
 
-## To the application globally run the following:    
+## To install the application generally run the following:    
    npm install --global yo bower grunt-cli     
    npm install -g generator-angular    
    npm install -g generator-karma
